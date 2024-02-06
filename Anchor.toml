@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+buyer_side_royalties_marketplace = "AhC8ej2B8LYF86ic16ZFZ4EGAxgcNz7Hvbx1pYdiAHqm"
+
+[programs.devnet]
+buyer_side_royalties_marketplace = "AhC8ej2B8LYF86ic16ZFZ4EGAxgcNz7Hvbx1pYdiAHqm"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/leo/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
